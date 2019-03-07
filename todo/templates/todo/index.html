@@ -1,0 +1,35 @@
+
+
+
+
+
+<h1>HELLO WELCOME </h1> 
+
+
+<h1> FOR ADDING SCHEDULES:</h1>
+ <form action="/add/" style="display: inline;" method="POST">{%csrf_token %}
+    <h2><input type="submit" value="ADD SCHEDULES"></h2>
+</form>
+
+
+
+
+<h1>FOR UPDATING SCHEDULES:</h1>
+ <form action="/home/" style="display: inline;" method="POST">{%csrf_token %}
+     <h2><input type="submit" value="UPDATE SCHEDULES"></h2>
+ </form>
+<h1> FOR DELETING SCHEDULES:</h1>
+ <form action="/delete/" style="display: inline;" method="POST">{%csrf_token %}
+    <h2><input type="submit" value="DELETE SCHEDULES"></h2>
+</form>
+
+
+<h1> FOR SHOWING SCHEDULES:</h1>
+ <form action="/show/" style="display: inline;" method="POST">{%csrf_token %}
+    <h2><input type="submit" value="SHOW SCHEDULES"></h2>
+</form>
+
+
+
+
+

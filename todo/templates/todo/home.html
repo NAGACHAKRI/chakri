@@ -1,0 +1,12 @@
+<ul>
+    {% for items in all_todoitems %}
+        <li>{{ items.content }}
+            <form action="/updatetodo/{{items.id}}/" method="POST">{%csrf_token %}
+                    <input type="text" name="new_schedule" placeholder="ENTER UPDATED TEXT">
+                    <input type="submit" value="update">
+                </form>
+
+           </li>
+    {% endfor %}
+</ul>
+        

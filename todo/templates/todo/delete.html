@@ -1,0 +1,9 @@
+<ul>
+        {% for items in all_todoitems %}
+               <li>{{ items.content }}
+                    <form action="/deletetodo/{{items.id}}/" method="POST">{%csrf_token %}
+                        <input type="submit" value="delete">
+                    </form>
+               </li>
+        {% endfor %}
+</ul>
